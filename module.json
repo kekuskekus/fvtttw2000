@@ -1,0 +1,37 @@
+{
+    "name": "ukrainian-arms-module",
+    "title": "Ukrainian Arms Module",
+    "description": "Foundry VTT support for the weapons in Ukrainian Arms expansion.",
+    "version": "1.1.0",
+    "author": "Daniel Roos",
+    "minimumCoreVersion": "0.8.6",
+    "compatibleCoreVersion": "10",
+    "packs": [
+        {
+            "name": "ukrainian-arms",
+            "label": "Ukrainian Arms",
+            "path": "./packs/items.db",
+            "entity": "Item",
+	    "system": "t2k4e",
+            "type": "Item"
+        }
+    ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "t2k4e",
+        "type": "system",
+        "manifest": "https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt/releases/download/latest/system.json",
+        "compatibility": {
+          "minimum": "2",
+          "verified": "10"
+        }
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "0.8.6",
+    "verified": "10.285",
+    "maximum": "10"
+  }
+}
